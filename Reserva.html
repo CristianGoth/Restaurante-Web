@@ -4,81 +4,71 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <link type="text/css" rel="stylesheet" href="css/style.css">
     <link type="text/js" rel="stylesheet" href="javascript/Formulario.js">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <title>Reserva</title>
 </head>
 <body>
-    <section>
+    <div id="menu">
         <section>
             <nav id="menuinicio">
                 <ul class="menu-horizontal">
                     <header>
-                    <li><a href="Restaurante.html">Inicio</a></li>
-                    <li><a href="Promociones.html">Promociones</a></li>
-                    <li>
-                        <a href="#">Menu</a>
-                        <ul class="menu-vertical">
-                            <li><a href="MenuVegetariano.html">Vegetariano</a>
-                            <a href="MenuNormal.html">Normal</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="Contacto.html">Contacto</a></li>
-                    <li><a href="Reserva.html">Reserva</a></li>
-                </header>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li>
+                            <a href="#">Menu</a>
+                            <ul class="menu-vertical">
+                                <li><a href="MenuVegetariano.html">Vegetariano</a>
+                                    <a href="MenuNormal.html">Normal</a>
+                                </li>
+                            </ul>
+                        
+                        <li><a href="Contacto.html">Contacto</a></li>
+                        <li><a href="Reserva.html">Reserva</a></li>
+                          <div class="container-fluid">
+                            <form class="form-inline my-2 my-lg-0">
+                              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                            </form>
+                          </div>
+                        <nav class="inicioseccion">
+                            <button class="btn btn-outline-success my-2 my-sm-0"><a href="Registrar.html"><img src="img/icons8-usuario-64.png" alt=""></a></button>
+                        </nav>
+                        </li>
+                    </header>
                 </ul>
-            </nav>
-            <div id="menunormal"></div>
-            <br>
-            <br>
+              </nav>
+        </section>
+            </div>
             <br>
             <main>
+                <nav class="titulo">
                 <h2>Reserva</h2><p></p>
-                <br>
-            <nav class="formulario">
+            </nav>
+            <br>
+            <ul class="formulario">
             <form action="#" method="post" >
-            <p>Nombre: <input type="text" name="nombre" placeholder="Escriba su nombre" required></p>
-            <br>
-                <p>Apellidos:
-                <input type="text" name="apellidos" size="40" placeholder="Escriba sus dos apellidos" required>
-              </p>
-              <br>
-            <p>Sexo:
-            <input type="radio" name="hm" value="h" required > Hombre
-            <input type="radio" name="hm" value="m" required> Mujer </p>
+            Nombre: <input type="text" name="nombre" placeholder="Escriba su nombre">
             <br>
             <br>
-            Fecha: <input type="date" name="fecha"  required>
+            Fecha: <input type="date" name="fecha" >
             <br>
             <br>
-            <br>
-            Hora: <input type="time" name="hora" required>
-            <br>
+            Hora: <input type="time" name="hora" >
             <br>
             <br>
-            <p> Telefono:
+            Telefono:
             <input name="phone" placeholder="teléfono (9 dígitos)" 
-            type="text" pattern="^[9|8|7|6]\d{8}$" required>  
-            </p> 
-            <br>
-            <br>
-            <p> Elige una mesa:
-            <select name="menu">
-                <nav class="eleccion">
-                <option>Uno</option>
-                <option>Dos</option>
-                <option>Tres</option>
-                <option>Cuatro</option>
-                <option>Cinco</option>
-                <option>Seis</option>
-                </nav>
-            </p>
-              </select>
+            type="text" pattern="^[9|8|7|6]\d{8}$">  
               <br>
               <br>
-              <br>
-              <p> Cantidad de Personas:
+            Cantidad de Personas:
                 <select name="menu">
                     <option>1</option>
                     <option>2</option>
@@ -86,38 +76,38 @@
                     <option>4</option>
                     <option>5</option>
                     <option>6</option>
-                </p>
                   </select>
                   <br>
                   <br>
-                  <br>
-                  <p> Deje su mensaje:
-                <br>
+            Deje su mensaje:
                 <br>
                 <br>
                   <textarea name="message" placeholder="Deje un comentario" ></textarea>
-                </p>
                   <br>
                 <br>
-                <br>
-                <input type="reset" value="Limpiar">
-                <input type="submit" value="Enviar">
-            </nav>
+    <button type="submit" class="formulario__btn">Enviar</button>
+    <br>
+    <button type="reset" class="formulario__btn">Eliminar</button>
             </form>
+        </ul>
         </main>
-
-        <section>
+        <br>
+        <br>
+        <footer>
             <nav id="RedesSociales">
-                <center><li>ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ
-                <a href="#"><h4>Redes Sociales</h4></a>
-                <a href="https://www.instagram.com/"><i class='bx bxl-instagram-alt'>https://www.instagram.com</i></a>
-                <a href="https://www.facebook.com/"><i class='bx bxl-facebook-square'>https://www.facebook.com</i></a>
-                <a href="https://www.twitter.com/"><i class='bx bxl-twitter' >https://www.twitter.com</i></a>
-                <a href="https://www.google.cl/maps/place/Tschernobyl+Reaktor/@51.3897156,30.0883744,15z/data=!4m13!1m7!3m6!1s0x472a7daa5b69c469:0x32d80be9b6bf089a!2sPr%C3%ADpiat,+%C3%93blast+de+Kiev,+Ucrania!3b1!8m2!3d51.4045032!4d30.0542331!3m4!1s0x472a8ee29903ece1:0xb228509b2cc0caf2!8m2!3d51.3891274!4d30.100524"><i class='bx bxs-location-plus'></i>https://www.googlemaps</a>
-            </li>
-            </center>
+                <br>
+                <h4>Redes Sociales</h4></a>
+                <br>
+                <a href="https://www.instagram.com/"><section><i class='bx bxl-instagram-alt'></i>https://www.instagram.com/</section></a>
+                <a href="https://www.facebook.com/"><section><i class='bx bxl-facebook-square'></i>https://www.facebook.com/</i></section></a>
+                <a href="https://www.twitter.com/"><section><i class='bx bxl-twitter' ></i>https://www.twitter.com/</section></a>
+                <a href="https://www.google.com/maps/place/Fosa+de+las+Marianas/@11.3493333,142.190811,15z/data=!4m13!1m7!3m6!1s0x67328f3cd57de715:0x1bbe64e7a21aa7fc!2sFosa+de+las+Marianas!3b1!8m2!3d11.3493126!4d142.1995658!3m4!1s0x67328f3cd57de715:0x1bbe64e7a21aa7fc!8m2!3d11.3493126!4d142.1995658"><section><i class='bx bxs-location-plus'></i>https://www.googlemaps.</section></a>
             </nav>
-        </section>
-    
+        </footer>
+            <!--script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script-->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+            <!--script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script-->
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </body>
 </html>
